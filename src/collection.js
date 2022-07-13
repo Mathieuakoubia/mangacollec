@@ -4,7 +4,7 @@ import "./collection.css"
 export default function collection_item(){
     return(
         <div class="collection-container">
-            <img src="img.jpg" alt="couverture manga">
+            <img src="img.jpg" alt="couverture manga"/>
                 <div class="description">
                     <h3>Title</h3>
                     <ul>
@@ -12,7 +12,7 @@ export default function collection_item(){
                         <li>auteur</li>
                         <li>date</li>
                     </ul>
-                    <a href="/">voir plus</a>
+                    <a href="/"> voir plus </a>
                 </div>
         </div>
 )

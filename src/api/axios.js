@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-	baseURL: 'http://localhost:3500',
+	baseURL: 'https://manga-api-6mvg7oyrgq-ew.a.run.app/',
 });

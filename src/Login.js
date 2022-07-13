@@ -59,7 +59,7 @@ const Login = () => {
 		<>
 			{success ? (
 				<section>
-					<h1>You are logged in!</h1>
+					<h1>Vous êtes connecté</h1>
 					<br />
 					<p>{/* <a href="#">Go to Home</a> */}</p>
 				</section>
@@ -72,7 +72,7 @@ const Login = () => {
 					>
 						{errMsg}
 					</p>
-					<h1>Sign In</h1>
+					<h1>Se connecrter</h1>
 					<form onSubmit={handleSubmit}>
 						<label htmlFor="username">Username:</label>
 						<input
@@ -85,7 +85,7 @@ const Login = () => {
 							required
 						/>
 
-						<label htmlFor="password">Password:</label>
+						<label htmlFor="password">Mot de passe:</label>
 						<input
 							type="password"
 							id="password"
@@ -93,13 +93,17 @@ const Login = () => {
 							value={pwd}
 							required
 						/>
-						<button>Sign In</button>
+						<button>Se connecter</button>
 					</form>
 					<p>
-						Need an Account?
+						Besoin d'un compte?
 						<br />
 						<span className="line">
 							<a href="/">Sign Up</a>
+						</span>
+						<br />
+						<span className="line">
+							<a href="collection.js">menu</a>
 						</span>
 					</p>
 				</section>

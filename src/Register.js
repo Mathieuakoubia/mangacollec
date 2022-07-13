@@ -6,6 +6,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Login from './Login';
+import collection_item from './collection';
 import axios from './api/axios';
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
@@ -98,7 +99,7 @@ const Register = () => {
 					>
 						{errMsg}
 					</p>
-					<h1>Register</h1>
+					<h1>S'inscrire</h1>
 					<form onSubmit={handleSubmit}>
 						<label htmlFor="username">
 							Username:
@@ -139,7 +140,7 @@ const Register = () => {
 						</p>
 
 						<label htmlFor="password">
-							Password:
+							Mot de passe:
 							<FontAwesomeIcon
 								icon={faCheck}
 								className={validPwd ? 'valid' : 'hide'}
@@ -179,7 +180,7 @@ const Register = () => {
 						</p>
 
 						<label htmlFor="confirm_pwd">
-							Confirm Password:
+							Confirmer le mot de passe:
 							<FontAwesomeIcon
 								icon={faCheck}
 								className={validMatch && matchPwd ? 'valid' : 'hide'}
@@ -213,14 +214,18 @@ const Register = () => {
 						<button
 							disabled={!validName || !validPwd || !validMatch ? true : false}
 						>
-							Sign Up
+							S'inscrire
 						</button>
 					</form>
 					<p>
-						Already registered?
+						Déja inscrit ?
 						<br />
 						<span className="line">
-							<a href="/login">Sign In</a>
+							<a href="/login">Se connecter</a>
+						</span>
+						<br />
+						<span className="line">
+							<a href="http://localhost:3000/">Menu</a>
 						</span>
 					</p>
 				</section>
